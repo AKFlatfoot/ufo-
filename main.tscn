@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://crpf7cji1xus8"]
+
+[ext_resource type="Script" uid="uid://c2iaikdxht2n3" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://j0w1xtwx8sqg" path="res://Sounds/Alarm.wav" id="2_w48qg"]
+[ext_resource type="AudioStream" uid="uid://bp4yp27kwqxi6" path="res://Sounds/BigBoyLaser.wav" id="4_2cqfq"]
+[ext_resource type="AudioStream" uid="uid://bdxim1rf20b4n" path="res://Sounds/Bomb.wav" id="5_yaehf"]
+[ext_resource type="AudioStream" uid="uid://7igmj3h8kst0" path="res://Sounds/Drone.wav" id="6_074og"]
+[ext_resource type="AudioStream" uid="uid://yu17eb73xxif" path="res://Sounds/EnemyLaser.wav" id="7_cegan"]
+[ext_resource type="AudioStream" uid="uid://dfispyjwxg7ti" path="res://Sounds/ExplosionBig.wav" id="8_82xsv"]
+[ext_resource type="AudioStream" uid="uid://dw16q1tynjc7y" path="res://Sounds/ExplosionSmall.wav" id="9_getpj"]
+[ext_resource type="AudioStream" uid="uid://bqr826lj167yf" path="res://Sounds/GameOver.wav" id="10_ryguw"]
+[ext_resource type="AudioStream" uid="uid://cqyptm07ag50m" path="res://Sounds/Pickup.wav" id="11_d13ii"]
+[ext_resource type="AudioStream" uid="uid://bqu8shxoh6k87" path="res://Sounds/SheildDown.wav" id="12_1u8w0"]
+[ext_resource type="AudioStream" uid="uid://nym3onoyswx6" path="res://Sounds/SheildRecharge.wav" id="13_0odxb"]
+[ext_resource type="AudioStream" uid="uid://b00fki4rkorp8" path="res://Sounds/Shoot2.wav" id="14_lswn8"]
+
+[node name="Main" type="Node2D" unique_id=1948900329]
+script = ExtResource("1_ig7tw")
+
+[node name="Alarm" type="AudioStreamPlayer" parent="." unique_id=2060510643]
+stream = ExtResource("2_w48qg")
+volume_db = -11.86
+
+[node name="BigBoyLaser" type="AudioStreamPlayer" parent="." unique_id=2137418964]
+stream = ExtResource("4_2cqfq")
+
+[node name="Bomb" type="AudioStreamPlayer" parent="." unique_id=1271575443]
+stream = ExtResource("5_yaehf")
+
+[node name="Drone" type="AudioStreamPlayer" parent="." unique_id=1044887524]
+stream = ExtResource("6_074og")
+
+[node name="EnemyLaser" type="AudioStreamPlayer" parent="." unique_id=1931471149]
+stream = ExtResource("7_cegan")
+
+[node name="ExplosionBig" type="AudioStreamPlayer" parent="." unique_id=1768724998]
+stream = ExtResource("8_82xsv")
+
+[node name="ExplosionSmall" type="AudioStreamPlayer" parent="." unique_id=993351126]
+stream = ExtResource("9_getpj")
+
+[node name="GameOver" type="AudioStreamPlayer" parent="." unique_id=1409267187]
+stream = ExtResource("10_ryguw")
+
+[node name="Pickup" type="AudioStreamPlayer" parent="." unique_id=674707619]
+stream = ExtResource("11_d13ii")
+
+[node name="SheildDown" type="AudioStreamPlayer" parent="." unique_id=169337984]
+stream = ExtResource("12_1u8w0")
+volume_db = -10.948
+
+[node name="SheildRecharge" type="AudioStreamPlayer" parent="." unique_id=1374577307]
+stream = ExtResource("13_0odxb")
+
+[node name="Shoot2" type="AudioStreamPlayer" parent="." unique_id=1043654789]
+stream = ExtResource("14_lswn8")
