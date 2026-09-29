@@ -49,7 +49,6 @@ var ufo_fire_t := 0.0
 var shield_was_down: bool = false
 # ============================================================
 func _ready() -> void:
-	print("sartup")
 	W = get_viewport().get_visible_rect().size.x
 	H = get_viewport().get_visible_rect().size.y
 	_reset_game()
@@ -77,7 +76,6 @@ func _reset_game() -> void:
 
 # ============================================================
 func _process(delta: float) -> void:
-	print("proceassa")
 	if game_over:
 		if Input.is_action_just_pressed("ui_accept"):
 			hi_score = max(hi_score, score)
